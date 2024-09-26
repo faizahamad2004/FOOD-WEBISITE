@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #ff6347;
+    padding: 15px 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container img {
+    width: 100px; 
+}
+
+.link a {
+    color: aqua;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: none;
+    color:blueviolet;
+  
+}
+
+.search input {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+.landingpage {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.heading h3 {
+    color: #ff6347;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.heading button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.heading button:hover {
+    background-color: #e5533d;
+}
+
+.image img {
+    width: 400px; 
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image img {
+        width: 100%; 
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-top: 15px;
+    }
+
+    .link a {
+        margin: 5px;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading h3 {
+        font-size: 24px;
+    }
+}
